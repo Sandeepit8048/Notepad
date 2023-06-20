@@ -1,0 +1,107 @@
+*{
+    padding: 0px ,0px, 5px;
+    margin: 0;
+    box-sizing:border-box ;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.Notes{
+    position: relative;
+    width: 800px;
+    height: 950px;
+    background-color: aquamarine;
+    border-radius: 3rem;
+    border-color: rgba(0, 0, 0, 0.955);
+    left: 700px;
+    top: 40px;
+}
+.Notes h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.Notes textarea{
+     position: relative;
+    width: 820px;
+    max-height: 800px;
+    border-radius: 1rem;
+    border-color: black;
+    left: 4px;
+    top: 15px;
+    font-size: 2.5rem;
+    /* max-height: 90vh; */
+}
+.Notesinput text{
+    position: absolute;
+    top: -2px;
+}
+
+.secandsection button{
+    font-size: 1.5rem;
+    width: 70px;
+    height: 50px;
+    background-color:red;
+}
+.secandsection input{
+    width: 80px;
+    height: 45px;
+    font-size: 1.5rem;
+    background-color: rgb(179, 119, 119);
+    color: white;
+}
+#char{
+    font-size: 2rem;
+    width: 60px;
+    height: 50px;
+}
+#word{
+     font-size: 2rem;
+    width: 60px;
+    height: 50px;
+}
+.counter{
+    font-size: 2rem;
+    float: right;
+}
+.inputs:hover{
+box-sizing: content-box;
+background-color: black;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.bubble{
+    position: relative;
+    display: flex;
+    
+}
+.bubble span{
+    position: relative;
+    border-radius:100%;
+    width: 30px;
+    height: 30px;
+     background-color:aquamarine ;
+    margin: 0  4px;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc4dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(70s / var(--i));
+}
+.bubble span:nth-child(even){
+    box-shadow: 0 0 0 10px red, 0 0 50px red, 0 0 100px red;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
